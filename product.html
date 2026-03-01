@@ -1,44 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Products - Variety Jewels | Stainless Steel Jewelry</title>
-    <meta name="description" content="Explore Variety Jewels stainless steel jewelry in Nepal. Earrings, necklaces, rings, bracelets for every occasion.">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Variety Jewels</title>
+
+<meta name="description" content="Shop premium stainless necklaces, rings and bracelets from Variety Jewels.">
+
+<style>
+body { margin:0; font-family:Segoe UI; background:white; }
+header { background:linear-gradient(to right,#fff,#f7e7b4); padding:20px; text-align:center; border-bottom:2px solid gold;}
+header h1 { color:#b8860b; }
+nav { background:#b8860b; padding:12px; text-align:center; }
+nav a { color:white; margin:0 20px; text-decoration:none; font-weight:bold; }
+.section { padding:60px 20px; text-align:center; }
+.products { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+.product { background:#fffdf5; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); }
+.product img { width:100%; height:250px; object-fit:cover; border-radius:8px; }
+footer { background:#b8860b; color:white; text-align:center; padding:20px; }
+</style>
 </head>
+
 <body>
 
 <header>
-    <img src="images/logo.png" alt="Variety Jewels Logo" width="120">
-    <h1>Our Products</h1>
+<h1>Our Products</h1>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="product.html">Products</a>
+<a href="about.html">About</a>
 </nav>
 
-<section>
-    <h2>Earrings</h2>
-    <img src="images/earrings.jpg" alt="Stainless Steel Earrings">
-    <p>Elegant stainless steel earrings for daily and party wear.</p>
+<section class="section">
+<div class="products">
 
-    <h2>Necklaces</h2>
-    <img src="images/necklace.jpg" alt="Stainless Steel Necklace">
-    <p>Stylish necklaces that shine in every moment.</p>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1" alt="Necklace">
+<h3>Classic Gold Necklace</h3>
+<p>Rs 1500</p>
+</div>
 
-    <h2>Rings</h2>
-    <img src="images/ring.jpg" alt="Stainless Steel Rings">
-    <p>Durable stainless steel rings with modern designs.</p>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1589987607627-5a48c32d7e0b" alt="Ring">
+<h3>Luxury Diamond Ring</h3>
+<p>Rs 1000</p>
+</div>
 
-    <h2>Bracelets</h2>
-    <img src="images/bracelet.jpg" alt="Stainless Steel Bracelet">
-    <p>Beautiful bracelets perfect for gifting or daily wear.</p>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1611080626919-7cf5a9c23c66" alt="Bracelet">
+<h3>Elegant Bracelet</h3>
+<p>Rs 1200</p>
+</div>
+
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Variety Jewels | Email: varietyjewels@gmail.com</p>
+© 2026 Variety Jewels
 </footer>
 
 </body>
