@@ -1,150 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variety Jewels</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fdfaf6;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar img {
-            height: 50px;
-        }
-        .nav-links a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .nav-links a:hover {
-            color: #bfa054;
-        }
+<title>Variety Jewels | Premium Stainless Jewelry in Nepal</title>
 
-        /* Hero Section */
-        .hero {
-            background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
-            height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 60px;
-            margin: 0;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-        }
-        .hero p {
-            font-size: 20px;
-            margin-top: 20px;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-        }
+<meta name="description" content="Variety Jewels offers premium stainless jewelry including necklaces, rings, and bracelets. Elegant, durable and affordable jewelry in Nepal.">
+<meta name="keywords" content="Variety Jewels, jewelry Nepal, stainless jewelry, gold necklace, rings, bracelets">
+<meta name="author" content="Variety Jewels">
 
-        /* Products Section */
-        .products {
-            padding: 50px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        .product-card {
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .product-card:hover {
-            transform: scale(1.05);
-        }
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .product-card h3 {
-            margin: 15px;
-        }
-        .product-card p {
-            margin: 0 15px 15px;
-            color: #777;
-        }
+<!-- Open Graph -->
+<meta property="og:title" content="Variety Jewels - Elegant Stainless Jewelry">
+<meta property="og:description" content="Discover premium stainless jewelry crafted with elegance and durability.">
+<meta property="og:type" content="website">
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        footer a {
-            color: #bfa054;
-            text-decoration: none;
-        }
-    </style>
+<!-- Google Analytics (Replace G-XXXXXXXXXX with your ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<style>
+body { margin:0; font-family: 'Segoe UI', sans-serif; background:#fff; color:#333; }
+header { background:linear-gradient(to right,#fff,#f7e7b4); padding:20px; text-align:center; border-bottom:2px solid gold;}
+header h1 { color:#b8860b; letter-spacing:2px; }
+nav { background:#b8860b; text-align:center; padding:12px; }
+nav a { color:white; text-decoration:none; margin:0 20px; font-weight:bold; }
+nav a:hover { color:black; }
+.hero { background:url('https://images.unsplash.com/photo-1605100804763-247f67b3557e') center/cover no-repeat;
+        padding:120px 20px; text-align:center; color:white; }
+.hero h2 { font-size:40px; }
+.btn { background:gold; padding:12px 25px; border:none; font-weight:bold; cursor:pointer; border-radius:5px; }
+.btn:hover { background:black; color:white; }
+.section { padding:60px 20px; text-align:center; }
+.products { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+.product { background:#fffdf5; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); }
+.product img { width:100%; height:250px; object-fit:cover; border-radius:8px; }
+footer { background:#b8860b; color:white; text-align:center; padding:20px; }
+</style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Variety Jewels Logo">
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div>
-            <h1>Variety Jewels</h1>
-            <p>Elegant Jewelry for Every Occasion</p>
-        </div>
-    </section>
+<header>
+<h1>Variety Jewels</h1>
+<p>Elegant Stainless Jewelry Collection</p>
+</header>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="product-card">
-            <img src="https://via.placeholder.com/300x200" alt="Product 1">
-            <h3>Diamond Necklace</h3>
-            <p>Elegant diamond necklace for special occasions.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/300x200" alt="Product 2">
-            <h3>Gold Earrings</h3>
-            <p>Classic gold earrings with intricate design.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/300x200" alt="Product 3">
-            <h3>Silver Bracelet</h3>
-            <p>Stylish silver bracelet for everyday elegance.</p>
-        </div>
-    </section>
+<nav>
+<a href="index.html">Home</a>
+<a href="product.html">Products</a>
+<a href="about.html">About</a>
+</nav>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2026 Variety Jewels | Follow us on 
-        <a href="#">Instagram</a> | <a href="#">Facebook</a>
-    </footer>
+<section class="hero">
+<h2>Timeless Beauty. Lasting Shine.</h2>
+<button class="btn" onclick="location.href='product.html'">Shop Now</button>
+</section>
+
+<section class="section">
+<h2 style="color:#b8860b;">Featured Collection</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0" alt="Gold Necklace">
+<h3>Luxury Gold Necklace</h3>
+<p>Rs 1500</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1588444650700-6b6e2f1d8c89" alt="Diamond Ring">
+<h3>Elegant Ring</h3>
+<p>Rs 900</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" alt="Bracelet">
+<h3>Premium Bracelet</h3>
+<p>Rs 1200</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Variety Jewels | Nepal
+</footer>
+
 </body>
 </html>
